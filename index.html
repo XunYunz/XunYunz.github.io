@@ -195,6 +195,98 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/02/03/JavaScriptNote/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://pic4.zhimg.com/v2-6fc22518d28a1fd2ccf9687523e54f68_r.jpg">
+      <meta itemprop="name" content="寻云子">
+      <meta itemprop="description" content="Hinc itur ad astra.">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="云下">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/02/03/JavaScriptNote/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-02-03 17:58:11 / 修改时间：17:56:47" itemprop="dateCreated datePublished" datetime="2022-02-03T17:58:11+08:00">2022-02-03</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>##JavaScript笔记<br>HTML 中的脚本必须位于 script 与 /script 标签之间。而脚本可被放置在 HTML 页面的 body 和 head 部分中。</p>
+<p>JavaScript 语句会在页面加载时执行。通常，我们需要在某个事件发生时执行代码，比如当用户点击按钮时。</p>
+<p>如果我们把 JavaScript 代码放入函数中，就可以在事件发生时调用该函数。</p>
+<p>如要使用外部的JavaScript代码，可在 script 标签的”src”属性中设置一个.js文件。</p>
+<p>##JavaScript的输出<br>JavaScript的输出方式有多种，如：</p>
+<p>window.alert() #弹出警告框<br>document.write() #将内容写入到HTML文档中<br>innerHTML #写入到HTML元素<br>console.log() #写入到浏览器的控制台</p>
+<p>HTML元素可以用“id”属性来标记，然后就可以用document.getElementByld(<em>id</em>)方法来访问这个HTML元素，再使用innerHTML来获取或插入元素内容：</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;这是一个 Web 页面&lt;/h1&gt;
+
+&lt;p id=&quot;demo&quot;&gt;这是一个段落&lt;/p&gt;
+
+&lt;script&gt;
+document.getElementById(&quot;demo&quot;).innerHTML = &quot;段落已修改。&quot;;
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>##JavaScript基本语法<br>一些基本结构：</p>
+<p>数组（Array）：[1,2,3,4,8,5.4,9]</p>
+<p>对象（Object）：{firstName:”John”, lastName:”Doe”, age:50, eyeColor:”blue”}</p>
+<p>函数（Function）:function Myfunction(a,b){return a*b;}</p>
+<p>其他知识点：</p>
+<ol>
+<li>变量用var来定义</li>
+<li>操作符</li>
+<li>//用于注释</li>
+<li>字符串类型String中的内容用’’或者””</li>
+<li>大小写敏感</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2022/02/01/TheFirstBlog/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -319,7 +411,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
