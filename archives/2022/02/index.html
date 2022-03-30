@@ -1,363 +1,185 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="google-site-verification" content="TZE0rZyIqLl10trYu3BWBWa1Vmz6HFwhb2OcNEK4u-s" />
+     <link rel="shortcut icon" href= /img/favicon.ico >
+    <title>
+        Welcom~
+    </title>
+    <meta name="description" content= 晚安 >
+    <meta name="keywords" content= Blog,Hexo,Theme,寻云子,xunyunz >
+    
+<link rel="stylesheet" href="/libs/highlight/styles/monokai-sublime.css">
 
-	<head>
-		
-<title>文章归档-GoodNight.</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="shortcut icon" type="image/x-icon" href="/image/favicon.ico">
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
 
-<meta name="keywords" content="Good Night.">
-<meta name="description" content="Good Night.">
+    
+<link rel="stylesheet" href="/css/style.css">
 
-
-<script src="/js/jquery.min.js"></script>
-
-
-	<meta name="generator" content="Hexo 6.0.0"></head>
-
-	<body>
-		
-
-<link rel="stylesheet" href="/css/archive.css">
+<meta name="generator" content="Hexo 6.0.0"></head>
+<body id="bodyx">
+    <div class="hd logodiv">
+    <img src="/img/avatar.png" class="logopng" alt="logo">
+    <p class="logot">
+         寻云子 
+         <span class="logo_2"></span>
+        <h3 class="words" style="font-weight: bold;font-family: Georgia;"> 
+            Good Night 
+        </h3>
+    </p>
+</div>
 
 
-<link rel="stylesheet" href="/css/header.css">
-
-	<div class="header">
-		<div class="header-top">
-			<div class="h-left">
-				<a href="/">
-					<img src="/image/logo.png" alt="Quiet">
-				</a>
-			</div>
-			<div class="h-right">
-				<ul>
-					
-						
-								<li>
-									<a href="/">
-										HOME
-									</a>
-									<span class="dot"></span>
-								</li>
-								
-									
-						
-							<li class="select">
-								<a href="/archives">
-									ARCHIVE
-								</a>
-								<span class="dot"></span>
-							</li>
-							
-									
-						
-								<li>
-									<a href="/categories">
-										CATEGORIES
-									</a>
-									<span class="dot"></span>
-								</li>
-								
-									
-						
-								<li>
-									<a href="/tags">
-										TAGS
-									</a>
-									<span class="dot"></span>
-								</li>
-								
-									
-						
-								<li>
-									<a href="/links">
-										LINKS
-									</a>
-									<span class="dot"></span>
-								</li>
-								
-									
-						
-								<li>
-									<a href="/about">
-										ABOUT
-									</a>
-									<span class="dot"></span>
-								</li>
-								
-									
-				</ul>
-			</div>
-			<div class="h-right-close">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-					<path fill="none" d="M0 0h24v24H0z" />
-					<path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z" fill="rgba(68,68,68,1)" />
-				</svg>
-			</div>
-		</div>
-	</div>
-	<div class="sidebar">
-    <div class="topo">
-        <h2>寻云子</h2>
-    </div>
-    <ul>
+<div class="hd">
+    <ol class="breadcrumb">
         
-        <li>
-            <a href="/">HOME</a>
-        </li>
+            <li><a class="ba" href="/about">关于我👀</a></li>
         
-        <li>
-            <a href="/archives">ARCHIVE</a>
-        </li>
+            <li><a class="ba" target="_blank" rel="noopener" href="https://hswxdu.top">访问主站🎉</a></li>
         
-        <li>
-            <a href="/categories">CATEGORIES</a>
-        </li>
+            <li><a class="ba" target="_blank" rel="noopener" href="https://github.com/XunYunz">GitHub🐒</a></li>
         
-        <li>
-            <a href="/tags">TAGS</a>
-        </li>
+
+            
+<script src="/libs/jquery.min.js"></script>
+
+            
+<script src="/js/search.js"></script>
+
+            
+                <form class="site-search-form">
+                    <i class="fa fa-search" id="search-logo"><input type="text" id="local-search-input" class="st-search-input" /></i>
+                </form>
+                <div id="local-search-result" class="local-search-result-cls"></div>
+            
+            <script type="text/javascript" id="local.search.active">
+                var inputArea       = document.querySelector("#local-search-input");
+                var getSearchFile = function(){
+                    var path = "/search.xml";
+                    searchFunc(path, 'local-search-input', 'local-search-result');
+                }
+                inputArea.onfocus = function(){ getSearchFile() }
+
+                var $resetButton = $("#search-form .fa-times");
+                var $resultArea = $("#local-search-result");
+
+                inputArea.oninput = function(){ $resetButton.show(); }
+                resetSearch = function(){
+                    $resultArea.html("");
+                    document.querySelector("#search-form").reset();
+                    $resetButton.hide();
+                    $(".no-result").hide();
+                }
+                inputArea.onkeydown = function(){ if(event.keyCode == 13) return false }
+                //No search result
+                $resultArea.bind("DOMNodeRemoved DOMNodeInserted", function(e) {
+                    if (!$(e.target).text()) {
+                        $(".no-result").show(100);
+                    } else {
+                        $(".no-result").hide();
+                    }
+                })
+            </script>
+
+    </ol>
+    <hr>
+</div>
+<div class="hd">
+    
+    
         
-        <li>
-            <a href="/links">LINKS</a>
-        </li>
         
-        <li>
-            <a href="/about">ABOUT</a>
-        </li>
+            <div class="titlex">
+                <p><span class="jing"></span><span style="color: #6d9ee7;"> 公元</span> 
+                 2022年 🕛
+                </p>
+            </div>
+            
         
-    </ul>
-    <div class="my_foot">
-        
-        <a target="_blank" rel="noopener" href="https://github.com/qiaobug">
-            <img src="https://cdn.jsdelivr.net/gh/duogongneng/MyBlogImg/imggithub.png" alt="Quiet主题">
+        <a class="flink" href="/2022/02/03/JavaScriptNote/">
+            <div class="list">
+                <div class="postname">
+                    JavaScriptNote
+                </div>
+                <div class="posttime">
+                    二月 3日
+                </div>
+            </div>
         </a>
+    
         
-    </div>
-</div>
-<div class='shelter'
-    style='cursor: pointer;display: none; position: fixed;left: 0;top: 0; right: 0;bottom: 0;background-color: #333;opacity:0.5;z-index: 108;'>
-</div>
-<style>
-    .sidebar {
-        width: 0;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background: #fff;
-        z-index: 999;
-        text-align: center;
-        box-shadow: -6px 0 20px rgba(98, 94, 94, .815)
-    }
-
-    .topo {
-        width: 100%;
-        height: 200px;
-        background: url(https://api.ixiaowai.cn/gqapi/gqapi.php) no-repeat;
-        background-size: 100% 100%;
-        position: relative;
-        display: flex;
-        align-items: flex-end
-    }
-
-    .topo h2 {
-        color: #fff;
-        z-index: 1;
-        position: relative;
-        margin: 0 0 10px 10px;
-        font-size: 1.2em;
-        box-sizing: border-box
-    }
-
-    .topo:before {
-        content: '';
-        background-image: url(/image/pattern.png);
-        background-repeat: repeat;
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        z-index: 1
-    }
-
-    .sidebar ul {
-        width: 100%;
-        margin-top: 50px
-    }
-
-    .sidebar ul li {
-        height: 50px;
-        list-style: none;
-        font-size: 1.2em;
-        text-align: right;
-        margin-right: 10px
-    }
-
-    .sidebar ul li a {
-        display: grid;
-        color: #5d606a;
-        text-overflow: ellipsis;
-        width: 100%;
-        text-decoration: none
-    }
-
-    .my_foot {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 10px;
-        position: absolute;
-        bottom: 0
-    }
-
-    .my_foot a {
-        text-decoration: none;
-        margin-right: 10px;
-        display: inline-block
-    }
-
-    .my_foot a img {
-        width: 30px;
-        height: 30px
-    }
-</style>
-
-<script>
-    $(function () { $('.h-right-close>svg').click(function () { $('.sidebar').animate({ width: "66%" }, 500); $('.shelter').fadeIn("slow") }); $('.shelter').click(function (e) { $('.sidebar').animate({ width: "0" }, 500); $('.shelter').fadeOut("slow") }) })
-</script>
-		<script>
-			$(function () { $(window).scroll(function () { if ($(document).scrollTop() > 100) { $(".header-top").removeClass("header-move2"); $('.header-top').addClass('header-move1') } else { $(".header-top").removeClass("header-move1"); $('.header-top').addClass('header-move2') } }) });
-		</script>
-
-<div class="header-bg">
-    <div class="bg-content">
-        <span>
-            <img src="https://cdn.jsdelivr.net/gh/duogongneng/MyBlogImg/imgicon-remixicon.svg" alt="Q">
-        </span>
-
-        <h2>居然用了 1 年一共才写了 2 篇文章!</h2>
-    </div>
-</div>
-<div class="article-content">
-    <div id="article" class="content">
         
-        <p>
-            2022
-        </p>
-        
-        <a href="/2022/02/03/JavaScriptNote/">
-            <span>JavaScriptNote</span>
-            <time>02-03</time>
+        <a class="flink" href="/2022/02/01/TheFirstBlog/">
+            <div class="list">
+                <div class="postname">
+                    The First Blog
+                </div>
+                <div class="posttime">
+                    二月 1日
+                </div>
+            </div>
         </a>
-        
-        <a href="/2022/02/01/TheFirstBlog/">
-            <span>The First Blog</span>
-            <time>02-01</time>
-        </a>
-        
-        
-    </div>
+    
 </div>
 
+    <div class="footer" id="footer">
+    <p><h4>Copyright © 2020 | Author: 寻云子 | Theme By <a class="theme-author" target="_blank" rel="noopener" href="https://github.com/Xunzhuo/hexo-theme-coder" style="font-size:14px; color: #969696">Coder</a></h4>
+    
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        <span id="busuanzi_container_site_pv">Page Views: <span id="busuanzi_value_site_pv"></span></span>
+        <span class="post-meta-divider">|</span>
+        <span id="busuanzi_container_site_uv">Unique Visitors: <span id="busuanzi_value_site_uv"></span></span>
+    
+    <label class="el-switch el-switch-blue el-switch-sm" style="vertical-align: sub;">
+        <input type="checkbox" name="switch" id="update_style">
+        <span class="el-switch-style"></span>
+    </label>
 
-
-
-<script>
-    $(function () { $('.article-content').addClass('content-move'); })
-</script>
-		
-<link rel="stylesheet" href="/css/food.css">
-
-<div class="footer">
-	<div class="Copyright">
-		©2022 By 寻云子. 主题：<a
-			style="text-decoration: none;display: contents; color: #898F9F;"
-			target="_blank" rel="noopener" href="https://github.com/qiaobug/hexo-theme-quiet">Quiet</a>
-	</div>
-	<div class="contact">
-		
-		<a target="_blank" rel="noopener" href="https://github.com/qiaobug">
-			<img src="https://cdn.jsdelivr.net/gh/duogongneng/MyBlogImg/imggithub.png" alt="Quiet主题">
-		</a>
-		
-	</div>
+    <!--         <script type="text/javascript">
+    var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
+    document.write(unescape("%3Cspan id='cnzz_stat_icon_1278548644'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/stat.php%3Fid%3D1278548644%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+    </script> -->
+</p>
 </div>
 
-<script src="/js/jquery.min.js"></script>
+<input type="hidden" id="web_style" value="black">
+<input type="hidden" id="valine_appid" value="">
+<input type="hidden" id="valine_appKey" value="">
+
+<script src="/libs/jquery.min.js"></script>
 
 
-<script src="/js/gotop.js"></script>
+<script src="/libs/highlight/highlight.pack.js"></script>
 
+<script src='//cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
+
+<script src="/js/js.js"></script>
 
 <style type="text/css">
-    @media screen and (min-width: 600px) {
-        .goTop>span {
-            display: block;
-            border-radius: 50%;
-            width: 66px;
-            height: 66px;
-            cursor: pointer;
-            opacity: 0.8;
-            background: rgba(18, 24, 58, 0.06);
-            text-align: center;
-            border: 1px solid rgba(18, 24, 58, 0.06);
-
-            transition: border .5s;
-            -moz-transition: border .5s;
-            /* Firefox 4 */
-            -webkit-transition: border .5s;
-            /* Safari 和 Chrome */
-            -o-transition: border .5s;
-            /* Opera */
-        }
-
-        .goTop>span:hover {
-            border: 1px solid #6680B3;
-        }
-
-
-        .goTop {
-            position: fixed;
-            right: 30px;
-            bottom: 80px;
-        }
-
-        .goTop>span>svg {
-            width: 30px;
-            height: 30px;
-            margin-top: 17.5px;
-            opacity: 0.7;
-        }
-
-    }
-
-    @media screen and (max-width: 600px) {
-        .goTop {
-            display: none;
-        }
-    }
+.v * {
+color: #698fca;
+}
+.v .vlist .vcard .vhead .vsys {
+color: #3a3e4a;
+}
+.v .vlist .vcard .vh .vmeta .vat {
+color: #638fd5;
+}
+.v .vlist .vcard .vhead .vnick {
+color: #6ba1ff;
+}
+.v a {
+color: #8696b1;
+}
+.v .vlist .vcard .vhead .vnick:hover {
+color: #669bfc;
+}
 </style>
-<div class="goTop" id="js-go_top">
-    <span>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-            <g>
-                <path d="M13 12v8h-2v-8H4l8-8 8 8z"></path>
-            </g>
-        </svg>
-    </span>
-</div>
-<script>
-    $('#js-go_top').gotoTop({ offset: 500, speed: 300, animationShow: { 'transform': 'translate(0,0)', 'transition': 'transform .5s ease-in-out' }, animationHide: { 'transform': 'translate(100px,0)', 'transition': 'transform .5s ease-in-out' } });
-</script>
-<script>
-	console.log('\n %c Hexo-Quiet 主题 %c https://github.com/QiaoBug/hexo-theme-quiet \n', 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;')
-</script>
-	</body>
-
+    <script type="text/javascript" color="173,174,173" opacity='1' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+</body>
 </html>
